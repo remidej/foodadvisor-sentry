@@ -64,9 +64,10 @@ module.exports = {
 
     // Notify the restaurant by email that their profile was visited
     console.log('About to send an email');
+    const ownerEmail = restaurant.owner.email;
     await strapi.plugins['email'].services.email.send({
       from: 'test@strapi.io',
-      to: restaurant.owner.email,
+      to: ownerEmail,
       subject: `${restaurant.name} just got a visit 👀`,
       text: `You just got a visit on FoodAdvisor! Expect a new client soon`,
     });
