@@ -1,6 +1,6 @@
 # Strapi API
 
-With some small changes.
+With some small, tiny changes.
 
 ## Available Scripts
 
